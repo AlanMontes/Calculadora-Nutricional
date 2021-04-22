@@ -19,6 +19,7 @@ public class Examen {
         // TODO code application logic here
      //Hola soy german y te apuesto una naranja a que lo primero que haces al despertar es abrir los ojos
         System.out.println("Holaaaaa");
+        System.out.println("Hola bebecitas");
     }
     
 }
