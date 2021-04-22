@@ -1,3 +1,4 @@
+package examen;
 public class Calculadora {
 
     private double IMC;

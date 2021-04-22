@@ -1,3 +1,4 @@
+package examen;
 public class Persona {
 
     private int Edad;

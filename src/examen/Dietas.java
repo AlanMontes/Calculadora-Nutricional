@@ -1,3 +1,5 @@
+package examen;
+
 public class Dietas {
 
     private double Kcl;
