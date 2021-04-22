@@ -12,6 +12,7 @@ public class Examen {
         System.out.println("Holaaaaa");
         System.out.println("Hola bebecitas");
         System.out.println("F");
+        System.out.println("Viva el cruz azul");
     }
     
 }
