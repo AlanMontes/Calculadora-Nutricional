@@ -1,4 +1,5 @@
 package examen;
+import javax.swing.JOptionPane;
 public class Calculadora {
     double Altura;
     double Peso;
@@ -25,7 +26,7 @@ public class Calculadora {
         Sexo = Sexo.toUpperCase();
         String evaluador="";
         double imc = Calcular_IMC(Altura,Peso); 
-        if (Sexo.equals("MASCULINO")) {
+        if (Sexo.equals("M")) {
             if (Edad<=19){
                 //EN CASO DE QUE PUEDAN CON NIÑOS, AQUI
             }
@@ -126,7 +127,11 @@ public class Calculadora {
             }
         }
         //La verdad no me quedó muy en claro donde vamos a mostrar estos datos, por eso los puse aquí
-        System.out.println("El IMC es: "+imc+" y se considera "+evaluador+".");
+        
+        JOptionPane.showMessageDialog(null,"Su Indice de Masa Corporal es: "+(int)imc+"\n y se considera: "+evaluador+"."); 
+        System.out.println(Edad);
+        System.out.println(Sexo);
+        System.out.println(imc);
     }
 
     public void Calcular_Kcl() {

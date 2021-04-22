@@ -1,5 +1,5 @@
 package examen;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Persona {
 
@@ -12,22 +12,13 @@ public class Persona {
     double Altura;
     String Nombre;
     String ActFisica;
-    Scanner sc = new Scanner(System.in);
-        System.out.println("edad");
-        Edad = sc.nextInt();
-        System.out.println("sexo");
-        Sexo = sc.nextLine();
-        sc.nextLine();
-        System.out.println("peso");
-        Peso = sc.nextDouble();
-        sc.nextLine();
-        System.out.println("altura");
-        Altura = sc.nextDouble();
-        sc.nextLine();
-        System.out.println("nombre");
-        Nombre = sc.nextLine();
-        System.out.println("actfisica");
-        ActFisica = sc.nextLine();
+    
+        Nombre = JOptionPane.showInputDialog(null,"Introduce tu Nombre: ");
+        Edad = Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce tu edad: "));
+        Sexo = JOptionPane.showInputDialog(null,"Introduce tu sexo: ");                 
+        Peso = Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce tu peso: "));
+        Altura = Double.parseDouble(JOptionPane.showInputDialog(null,"Introduce tu altura en metros: "));        
+        ActFisica = JOptionPane.showInputDialog(null,"Introduce la  : ' SEDENTARIA   MODERADA  ACTIVA ' ");            
         Calculadora calcu = new Calculadora(Altura, Peso, Sexo, Edad);
         calcu.Calcular_IMC();
     }
