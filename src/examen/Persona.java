@@ -1,15 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package examen;
-
-/**
- *
- * @author linom
- */
 public class Persona {
-    //Esta es la clase prueba
-    
+
+    private int Edad;
+
+    private String Sexo;
+
+    private double Peso;
+
+    private double Altura;
+
+    private String Nombre;
+
+    public Persona() {
+    }
+
+    public void Get_Datos() {
+    }
 }
