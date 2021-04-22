@@ -129,9 +129,6 @@ public class Calculadora {
         //La verdad no me quedó muy en claro donde vamos a mostrar estos datos, por eso los puse aquí
         
         JOptionPane.showMessageDialog(null,"Su Indice de Masa Corporal es: "+(int)imc+"\n y se considera: "+evaluador+"."); 
-        System.out.println(Edad);
-        System.out.println(Sexo);
-        System.out.println(imc);
     }
 
     public void Calcular_Kcl() {
