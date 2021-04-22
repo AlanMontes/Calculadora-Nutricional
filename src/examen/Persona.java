@@ -21,6 +21,8 @@ public class Persona {
         ActFisica = JOptionPane.showInputDialog(null,"Introduce la  : ' SEDENTARIA   MODERADA  ACTIVA ' ");            
         Calculadora calcu = new Calculadora(Altura, Peso, Sexo, Edad);
         calcu.Calcular_IMC();
+        
+      
     }
     
 

@@ -5,18 +5,20 @@ public class Calculadora {
     double Peso;
     String Sexo;
     int Edad;
-
+//Constructor de calculadora 
     public Calculadora(double altura, double peso, String sexo, int edad) {
         this.Altura = altura;
         this.Peso = peso;
         this.Sexo = sexo;
         this.Edad = edad;
     }
+  
+    //Metodo que engloba formulas
     public void mostrarCalculadora(){
         Calcular_IMC();
         Calcular_Kcl();
     }
-
+//Formula del IMC
     public double Calcular_IMC(double altura, double peso) {
         double imc;
         imc = peso/(Math.pow(altura, 2));
