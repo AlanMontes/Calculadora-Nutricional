@@ -130,7 +130,7 @@ public class Calculadora {
                 JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1300");
             }
         } else if (edad >= 4 && edad <= 8) {
-            if ("MASCULINO".equals(sexo)) {
+            if ("M".equals(sexo)) {
                 if ("SEDENTARIA".equals(actfisica)) {
                     JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1000");
                 } else if ("MODERADA".equals(actfisica)) {
@@ -150,7 +150,7 @@ public class Calculadora {
             }
 
         } else if (edad >= 9 && edad <= 13) {
-            if ("MASCULINO".equals(sexo)) {
+            if ("M".equals(sexo)) {
                 if ("SEDENTARIA".equals(actfisica)) {
                     JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1600");
                 } else if ("MODERADA".equals(actfisica)) {
@@ -170,7 +170,7 @@ public class Calculadora {
             }
 
         } else if (edad >= 14 && edad <= 18) {
-            if ("MASCULINO".equals(sexo)) {
+            if ("M".equals(sexo)) {
                 if ("SEDENTARIA".equals(actfisica)) {
                     JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1900");
                 } else if ("MODERADA".equals(actfisica)) {
@@ -190,7 +190,69 @@ public class Calculadora {
             }
 
         }
+      else if (edad >= 19 && edad <= 30) {
+            if ("M".equals(sexo)) {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2100");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2700");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 3000");
+                }
+            } else {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1600");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2100");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2300");
+                }
 
+            }
+
+        }
+       else if (edad >= 31 && edad <= 60) {
+            if ("M".equals(sexo)) {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2000");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2500");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2800");
+                }
+            } else {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1500");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2000");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2200");
+                }
+
+            }
+
+        } 
+       else {
+             if ("M".equals(sexo)) {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2000");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2300");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2600");
+                }
+            } else {
+                if ("SEDENTARIA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1400");
+                } else if ("MODERADA".equals(actfisica)) {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1800");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2000");
+                }
+
+            }
+           
+       }
     }
 
 }
