@@ -3,11 +3,12 @@ package examen;
 
  class VentanaImages extends javax.swing.JFrame {
 
+   /*La clase VentanaImages es una herencia de la clase javax.swing.JFrame
+     Y tiene encapsulamiento default*/  
     public VentanaImages() {
         initComponents();
     }
 
-    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -97,10 +98,8 @@ package examen;
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
     
     public static void main(String args[]) {
- 
        
     }
 

@@ -1,39 +1,50 @@
 package examen;
-
+/*Se importa la libreria javax.swing.JOptionPane */ 
 import javax.swing.JOptionPane;
 
+/*Declaración de la clase*/ 
 public class Calculadora {
 
-    double Altura;
-    double Peso;
-    String Sexo;
-    int Edad;
-    String ActFisica;
+/*Declaración de las variables globales */ 
+    private double Altura;
+    private double Peso;
+    private String Sexo;
+    private int Edad;
+    private String ActFisica;
 
+/*Se crea el metodo constructor de Calculadora con los parametros altura, peso, sexo y edad*/     
     public Calculadora(double altura, double peso, String sexo, int edad) {
+      /*Se hace referencia a las variables globales*/ 
         this.Altura = altura;
         this.Peso = peso;
         this.Sexo = sexo;
         this.Edad = edad;
     }
-
+/*Se crea el metodo constructor de Calculadora con los parametros edad, sexo, actfisica*/ 
     public Calculadora(int edad, String sexo, String actfisica) {
+       /*Se hace referencia a las variables globales*/ 
         this.Edad = edad;
         this.Sexo = sexo;
         this.ActFisica = actfisica;
-
     }
-
+/*El metodo constructor Calculadora utiliza sobrecargar */
+    
+/*Se incializa el metodo Calcular_IMC que retornara un valor de tipo double y tienes los parametros de altura y peso*/  
     public double Calcular_IMC(double altura, double peso) {
         double imc;
         imc = peso / (Math.pow(altura, 2));
         return imc;
     }
 
+/*Se incializa el metodo Calcular_IMC pero sin parametros generando una sobrecarga de matodos*/  
     public void Calcular_IMC() {
+    /*Sexo se iguala con el metodo toUpperCase que hara mayusculas las letras*/          
         Sexo = Sexo.toUpperCase();
+    /*Se le asigna un valor tipo String al atributo evalueador*/    
         String evaluador = "";
+    /*Se crea la variable imc y se iguala con el metodo Calcular_IMC */
         double imc = Calcular_IMC(Altura, Peso);
+    /*Anidados condicionales que la asignan un valor a evaluador dependiendo del sexo, la edad y el IMC*/     
         if (Sexo.equals("M")) {
 /*NIÑOS*/   if (Edad <= 10){ if(imc<=13.7){evaluador = "Bajo";}else if(imc<=16.4){evaluador = "Normal";}else if (imc<21.4){evaluador = "Alto";}else{evaluador = "Muy alto";}                
             }
@@ -85,19 +96,19 @@ public class Calculadora {
                 else if(Edad<=79){if (imc<24){evaluador = "Bajo";}else if (imc<37){evaluador = "Normal";}else if (imc<=41) {evaluador = "Alto";}else {evaluador = "Muy alto";}
                 }
  }
+        /*Se muestra en una ventana el resultado del IMC y su clasificación*/ 
         JOptionPane.showMessageDialog(null, "Su Indice de Masa Corporal es: " + (int) imc + "\n y se considera: " + evaluador + ".");
     }
-
+        /*Se crea el metodo CalcularCalorias*/ 
     public void CalcularCalorias(int edad, String sexo, String actfisica) {
         
+        /*Los atributos AcrFisica y Sexo se igualan con el metodo toUpperCase que convertira las letras a mayusculas*/ 
         ActFisica = ActFisica.toUpperCase();
-        System.out.println(ActFisica);        
         Sexo = Sexo.toUpperCase();
-        System.out.println(Sexo);
-        System.out.println(edad);
+        
+        /*Anidados condicionales que dependen del sexo, la edad y la actfisica*/  
         if (edad >= 2 && edad <= 3) {
             if ("SEDENTARIA".equals(actfisica)) {
-                System.out.println("aqui");
                 JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1000");
             } else if ("MODERADA".equals(actfisica)) {
                 JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 1100");
@@ -225,10 +236,7 @@ public class Calculadora {
                 } else {
                     JOptionPane.showMessageDialog(null, "Calorias que debes consumir de acuerdo a tus datos: 2000");
                 }
-
-            }
-           
+            }      
        }
     }
-
 }
