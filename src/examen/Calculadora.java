@@ -35,80 +35,56 @@ public class Calculadora {
         String evaluador = "";
         double imc = Calcular_IMC(Altura, Peso);
         if (Sexo.equals("M")) {
-            if (Edad <= 19) {
-                //EN CASO DE QUE PUEDAN CON NIÑOS, AQUI
-            } else if (Edad <= 39) {
-                if (imc < 8) {
-                    evaluador = "Bajo";
-                } else if (imc < 21) {
-                    evaluador = "Normal";
-                } else if (imc <= 25) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
-
-            } else if (Edad <= 59) {
-                if (imc < 11) {
-                    evaluador = "Bajo";
-                } else if (imc < 22) {
-                    evaluador = "Normal";
-                } else if (imc <= 27) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
-
-            } else if (Edad <= 79) {
-                if (imc < 13) {
-                    evaluador = "Bajo";
-                } else if (imc < 26) {
-                    evaluador = "Normal";
-                } else if (imc <= 30) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
-
+/*NIÑOS*/   if (Edad <= 10){ if(imc<=13.7){evaluador = "Bajo";}else if(imc<=16.4){evaluador = "Normal";}else if (imc<21.4){evaluador = "Alto";}else{evaluador = "Muy alto";}                
             }
-        } else {
-            if (Edad <= 19) {
-                //EN CASO DE QUE PUEDAN CON NIÑAS, AQUI
-            } else if (Edad <= 39) {
-                if (imc < 21) {
-                    evaluador = "Bajo";
-                } else if (imc < 34) {
-                    evaluador = "Normal";
-
-                } else if (imc <= 38) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
-            } else if (Edad <= 59) {
-                if (imc < 23) {
-                    evaluador = "Bajo";
-                } else if (imc < 35) {
-                    evaluador = "Normal";
-                } else if (imc <= 40) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
-            } else if (Edad <= 79) {
-                if (imc < 24) {
-                    evaluador = "Bajo";
-                } else if (imc < 37) {
-                    evaluador = "Normal";
-                } else if (imc <= 41) {
-                    evaluador = "Alto";
-                } else {
-                    evaluador = "Muy alto";
-                }
+            else if(Edad == 11){if(imc<=14.1){evaluador = "Bajo";}else if(imc<=16.9){evaluador = "Normal";}else if (imc<22.5){evaluador = "Alto";}else{evaluador = "Muy alto";}
             }
-        }
-        //La verdad no me quedó muy en claro donde vamos a mostrar estos datos, por eso los puse aquí
-
+            else if(Edad == 12){if(imc<=14.5){evaluador = "Bajo";}else if(imc<=17.5){evaluador = "Normal";}else if (imc<23.6){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 13){if(imc<=14.9){evaluador = "Bajo";}else if(imc<=18.2){evaluador = "Normal";}else if (imc<24.8){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 14){if(imc<=15.5){evaluador = "Bajo";}else if(imc<=19){evaluador = "Normal";}else if (imc<25.9){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 15){if(imc<=16){evaluador = "Bajo";}else if(imc<=19.8){evaluador = "Normal";}else if (imc<27){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 16){if(imc<=16.5){evaluador = "Bajo";}else if(imc<=20.5){evaluador = "Normal";}else if (imc<27.9){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 17){if(imc<=16.9){evaluador = "Bajo";}else if(imc<=21.1){evaluador = "Normal";}else if (imc<28.6){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+            else if(Edad == 18){if(imc<=17.3){evaluador = "Bajo";}else if(imc<=21.7){evaluador = "Normal";}else if (imc<29.2){evaluador = "Alto";}else{evaluador = "Muy alto";}
+            }
+/*ADULTOS*/ else if(Edad<=39){if (imc<8) {evaluador = "Bajo"; }else if (imc<21) {evaluador = "Normal";}else if (imc<=25) {evaluador = "Alto";}else  {evaluador = "Muy alto";}              
+            }
+            else if(Edad<=59){if (imc<11) {evaluador = "Bajo";}else if (imc<22) {evaluador = "Normal";}else if (imc<=27){evaluador = "Alto";}else{evaluador = "Muy alto";}                            
+            }
+            else if(Edad<=79){if (imc<13) {evaluador = "Bajo";}else if (imc<26) {evaluador = "Normal";}else if (imc<=30) {evaluador = "Alto";}else{evaluador = "Muy alto";}                               
+            }
+}else {/*Mujeres*/
+/*Niñas*/       if (Edad <= 10){ if(imc<=13.5){evaluador = "Bajo";}else if(imc<=16.6){evaluador = "Normal";}else if (imc<22.6){evaluador = "Alto";}else{evaluador = "Muy alto";}                
+                }
+                else if(Edad == 11){if(imc<=13.9){evaluador = "Bajo";}else if(imc<=17.2){evaluador = "Normal";}else if (imc<23.7){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 12){if(imc<=14.4){evaluador = "Bajo";}else if(imc<=18){evaluador = "Normal";}else if (imc<25){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 13){if(imc<=14.9){evaluador = "Bajo";}else if(imc<=18.8){evaluador = "Normal";}else if (imc<26.2){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 14){if(imc<=15.4){evaluador = "Bajo";}else if(imc<=19.6){evaluador = "Normal";}else if (imc<27.3){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 15){if(imc<=15.9){evaluador = "Bajo";}else if(imc<=20.2){evaluador = "Normal";}else if (imc<28.2){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 16){if(imc<=16.2){evaluador = "Bajo";}else if(imc<=20.7){evaluador = "Normal";}else if (imc<28.9){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 17){if(imc<=16.4){evaluador = "Bajo";}else if(imc<=21){evaluador = "Normal";}else if (imc<29.3){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad == 18){if(imc<=16.4){evaluador = "Bajo";}else if(imc<=21.3){evaluador = "Normal";}else if (imc<29.5){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+/*ADULTAS*/     else if(Edad<=39){if (imc<21){evaluador = "Bajo";}else if (imc<34){evaluador = "Normal";}else if (imc<=38) {evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad<=59){if (imc<23) {evaluador = "Bajo";}else if (imc<35) {evaluador = "Normal";}else if (imc<=40){evaluador = "Alto";}else{evaluador = "Muy alto";}
+                }
+                else if(Edad<=79){if (imc<24){evaluador = "Bajo";}else if (imc<37){evaluador = "Normal";}else if (imc<=41) {evaluador = "Alto";}else {evaluador = "Muy alto";}
+                }
+ }
         JOptionPane.showMessageDialog(null, "Su Indice de Masa Corporal es: " + (int) imc + "\n y se considera: " + evaluador + ".");
     }
 
