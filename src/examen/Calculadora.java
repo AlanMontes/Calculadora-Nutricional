@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 /*Declaración de la clase*/ 
 public class Calculadora {
-//TÚ MECO DE MIERDA Y LA JESICA SE ME PUEDEN IR A LA VERGAAAAAAAA
+
 /*Declaración de las variables globales */ 
     private double Altura;
     private double Peso;
