@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 /*Declaración de la clase*/ 
 public class Calculadora {
-
+//dahdbhbsddbaskdbkdbadbkabdkajbdbkjbdkj
 /*Declaración de las variables globales */ 
     private double Altura;
     private double Peso;
