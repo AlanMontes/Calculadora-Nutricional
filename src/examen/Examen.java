@@ -13,6 +13,7 @@ public class Examen {
         VentanaImages V = new VentanaImages();
         // El objeto V manda a llamar al metodo setVisible
         V.setVisible(true);
+        System.out.println("Hola Main");
     
  }
     
